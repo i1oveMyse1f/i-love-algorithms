@@ -239,7 +239,7 @@ for (const auto& [key, value] : m) {
 
 - [GNU-расширения языка C](https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html), в частности к этому разделу будет полезным дополнением знать о:
   - [Разрешить пустые ветки в тернарном операторе](https://gcc.gnu.org/onlinedocs/gcc/Conditionals.html)
-  - [ranges в switch-case](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html)
+  - [ranges в switch-case](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html) - это конструкция вида `case 'a' ... 'z':`
 - [Microsoft-расширения языка C++](https://learn.microsoft.com/en-us/cpp/build/reference/microsoft-extensions-to-c-and-cpp)
 
 Данные расширения обычно необходимо включать и всё зависит исключительно от настроек вашего проекта, поэтому не стоит использовать их в качестве стандартных конструкций, но знать о них полезно.
