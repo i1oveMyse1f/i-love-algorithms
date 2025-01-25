@@ -4,9 +4,16 @@ Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/ 
 */
 @media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
+    html {
+        font-size: 18px;
+    }
+
+    /* Increase the font size on higher resolutions */
+    .container {
+        max-width: 80%;
+    }
 }
+
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -24,9 +31,10 @@ a:hover {
 pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: #E3EDF3 1px solid;
+    /* border: #E3EDF3 1px solid; */
+    border: none;
     width: 100%;
-    padding: 7px;
+    padding: 0px;
     font-family: monospace, sans-serif;
     font-size: .9rem;
     white-space: pre;
@@ -35,8 +43,16 @@ pre {
     border-radius: 0px;
     line-height: 1.6;
     color: #333;
-    margin-bottom: -rem;
+    margin: 0
 }
+
+/* code {
+    background-color: #f9f9f9;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #333;
+    font-family: monospace;
+} */
 
 .mediumnavigation {
     background: rgba(255, 255, 255, .97);
@@ -390,8 +406,8 @@ blockquote {
 }
 
 .icon {
-    width:24px;
-    height:24px;
+    width: 24px;
+    height: 24px;
 }
 
 @media (min-width:1024px) {
@@ -903,4 +919,32 @@ iframe {
 .lazyimg[data-srcset] {
     opacity: 0;
     transition: opacity .25s;
+}
+
+table {
+    border-collapse: collapse;
+    /* Убирает двойные границы */
+    width: 100%;
+    /* Таблица будет занимать всю ширину контейнера */
+    margin: 20px 0;
+    /* Отступы сверху и снизу */
+    border: 1px solid #ddd;
+    /* Общая граница таблицы */
+}
+
+table th,
+table td {
+    padding: 10px;
+    /* Добавляет отступы внутри ячеек */
+    text-align: left;
+    /* Выравнивание текста */
+    border: 1px solid #ddd;
+    /* Граница между ячейками */
+}
+
+table th {
+    background-color: #f4f4f4;
+    /* Фон для заголовков */
+    font-weight: bold;
+    /* Полужирный текст */
 }
