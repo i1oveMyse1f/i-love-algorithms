@@ -107,15 +107,15 @@ switch (c) {
     case 'a':
     case 'b':
     case 'c':
-        cout << "c is lower";
+        cout << "a or b or c is lower";
         break;
     case 'A':
     case 'B':
     case 'C':
-        cout << "c is upper";
+        cout << "A or B or C is upper";
         break;
     default:
-        cout << "c is symbol";
+        cout << "not a or b or c or upper";
 }
 ```
 
