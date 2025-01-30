@@ -22,7 +22,7 @@ var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or p
     }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
 
 var idx = lunr(function () {
-    this.use(lunr.ru);
+    this.use(lunr.multiLanguage('ru', 'en'));
 
     this.ref('id')
     this.field('title')
