@@ -1,20 +1,20 @@
 ---
 layout: post
 year: 25
-title:  "Сортировки"
+title:  "Разреженные таблицы"
 author: i_love_myself
 categories: [ info ]
 comments: false
 toc: false
 ---
 
-В этой главе вы познакомитесь в различными алгоритмами сортировки, а так же узнаете теоретические оценки на время оптимальной сортировки.
+Статическая структура данных, позволяющая находить минимум на отрезке за $O(1)$, а так же ее более эффективные и широкие модификации.
 
 ## Список разделов
 
 <div>
 <p>
-{% assign theme_name = "/sortings/" %}
+{% assign theme_name = "/sparse-table/" %}
 
 {% for lecture in site.pages %}
     {% if lecture.path contains 'README.md' and lecture.path contains theme_name %}

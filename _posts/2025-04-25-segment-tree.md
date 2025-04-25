@@ -1,20 +1,20 @@
 ---
 layout: post
 year: 25
-title:  "Сортировки"
+title:  "Деревья отрезков"
 author: i_love_myself
 categories: [ info ]
 comments: false
 toc: false
 ---
 
-В этой главе вы познакомитесь в различными алгоритмами сортировки, а так же узнаете теоретические оценки на время оптимальной сортировки.
+Структура данных, позволяющая находить сумму на отрезке с изменениями и решать значительно более широкий пласт задач.
 
 ## Список разделов
 
 <div>
 <p>
-{% assign theme_name = "/sortings/" %}
+{% assign theme_name = "/sparse-table/" %}
 
 {% for lecture in site.pages %}
     {% if lecture.path contains 'README.md' and lecture.path contains theme_name %}
