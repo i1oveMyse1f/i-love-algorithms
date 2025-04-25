@@ -14,7 +14,7 @@ toc: false
 
 <div>
 <p>
-{% assign theme_name = "/sparse-table/" %}
+{% assign theme_name = "/segment-tree/" %}
 
 {% for lecture in site.pages %}
     {% if lecture.path contains 'README.md' and lecture.path contains theme_name %}
