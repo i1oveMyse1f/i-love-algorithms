@@ -90,8 +90,8 @@ struct PersistentStack {
     int top() {
         return top->value;
     }
-    Node* rollback(int k) {
-        return versions[k];
+    void rollback(int k) {
+        top = versions[k];
     }
 };
 ```
