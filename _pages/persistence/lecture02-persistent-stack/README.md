@@ -25,18 +25,11 @@ struct Stack {
     Stack() : top(nullptr) {}
 
     void push(int x) {
-        Node *newNode = new Node();
-        newNode->value = x;
-        newNode->next = top;
-        top = newNode;
+        top = new Node{x, top};
     }
-
     void pop() {
-        Node *oldTop = top;
-        top = top->next;
-        delete oldTop;
+        top = top->prev;
     }
-
     int top() {
         return top->value;
     }
@@ -87,21 +80,17 @@ struct PersistentStack {
 
     PersistentStack() : top(nullptr) {}
     void push(int x) {
-        Node *newNode = new Node();
-        newNode->value = x;
-        newNode->prev = top;
-        top = newNode;
-        versions.push_back(newNode);
+        top = new Node{x, top};
+        versions.push_back(top);
     }
     void pop() {
-        Node *oldTop = top;
         top = top->prev;
-        versions.push_back(oldTop);
+        versions.push_back(top);
     }
     int top() {
         return top->value;
     }
-    Node* reversion(int k) {
+    Node* rollback(int k) {
         return versions[k];
     }
 };
