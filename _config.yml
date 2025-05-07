@@ -56,7 +56,7 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 6
+paginate: 30
 paginate_path: /page:num/
     
 # Other
