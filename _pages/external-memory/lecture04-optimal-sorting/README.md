@@ -91,7 +91,7 @@ $$
 Или
 
 $$
-H \geq \frac{2N \ln \frac{N}{B}}{B \ln \frac{M}{B}} = \Theta(\frac{N}{B} \log_{\frac{M}{B}} \frac{N}{B})
+H \geq \frac{2N \ln \frac{N}{B}}{B \ln \frac{M}{B}} = \Theta \left(\frac{N}{B} \log_{\frac{M}{B}} \frac{N}{B}\right)
 $$
 
 То есть получили нижнюю оценку на $H$ в $\Omega(\frac{N}{B} \log_{\frac{M}{B}} \frac{N}{B})$ что и требовалось доказать.
