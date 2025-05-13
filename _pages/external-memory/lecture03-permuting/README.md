@@ -108,3 +108,5 @@ $$
 ## Ссылки
 
 1. [Конспекты](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=3e8ee3d1f8920a99f78d3e6de5ffe7406b085d52) профессора Yufei Tao из Chinese University of Hong Kong
+2. Оригинальная работа A. Aggarwal and J. S. Vitter. The input/output complexity of sorting and related problems.
+CACM, 31(9):1116–1127, 1988.
