@@ -147,7 +147,7 @@ $$
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Реализация</summary>
 
 ```cpp
@@ -159,35 +159,36 @@ const int N = 1e5 + 1;
 int degq[N], h[N];
 
 bool is_equal(int l1, int r1, int l2, int r2) {
- int h1 = h[r1] - (l1 == 0 ? 0 : h[l1 - 1]);
- if (h1 < 0) h1 += P;
- int h2 = h[r2] - (l2 == 0 ? 0 : h[l2 - 1]);
- if (h2 < 0) h2 += P;
- return h1 * 1LL * degq[l2] % P == h2 * 1LL * degq[l1] % P;
+    int h1 = h[r1] - (l1 == 0 ? 0 : h[l1 - 1]);
+    if (h1 < 0) h1 += P;
+    int h2 = h[r2] - (l2 == 0 ? 0 : h[l2 - 1]);
+    if (h2 < 0) h2 += P;
+    return h1 * 1LL * degq[l2] % P == h2 * 1LL * degq[l1] % P;
 }
 
 int main() {
- // h(s1s2s3...) = s1 + s2*Q + s3*Q^2 + ...
- degq[0] = 1;
- for (int i = 1; i < N; ++i)
-  degq[i] = degq[i - 1] * 1LL * Q % P;
+    // h(s1s2s3...) = s1 + s2*Q + s3*Q^2 + ...
+    degq[0] = 1;
+    for (int i = 1; i < N; ++i) {
+        degq[i] = degq[i - 1] * 1LL * Q % P;
+    }
  
- string s;
- cin >> s;
+    string s;
+    cin >> s;
  
- int n = s.size();
+    int n = s.size();
  
- for (int i = 0; i < n; ++i) {
-  h[i] = ((i == 0 ? 0 : h[i - 1]) + s[i] * 1LL * degq[i]) % P;
- }
+    for (int i = 0; i < n; ++i) {
+        h[i] = ((i == 0 ? 0 : h[i - 1]) + s[i] * 1LL * degq[i]) % P;
+    }
  
- int q;
+    int q;
     cin >> q;
     for (int i = 0; i < q; ++i) {
         int l1, r1, l2, r2;
         cin >> l1 >> r1 >> l2 >> r2;
         --l1; --l2; --r1; --r2;
-        cout << (is_equal(l1, r1, l2, r2) ? "YES" : "NO") << endl;
+        cout << (is_equal(l1, r1, l2, r2) ? "YES" : "NO") << "\n";
     }
 }
 ```
