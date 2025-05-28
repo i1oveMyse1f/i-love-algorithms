@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title:  "Хеш таблицы"
+title:  "Хеш-таблицы"
 author: i_love_myself
 categories: [ hashes, data_structures ]
 toc: true
